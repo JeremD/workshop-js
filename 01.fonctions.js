@@ -14,17 +14,6 @@ function additionner(nb1, nb2) {
     return nb1 + nb2;
 }
 
-/**
- * Soustraire deux nombres
- *
- * @param nb1
- * @param nb2
- * @returns soustraction
- */
-function soustraire(nb1, nb2) {
-    return nb1 - nb2;
-}
-
 // Addition
 var resultat1 = additionner(nombre1, nombre2);
 console.log("resultat1 =", resultat1);
@@ -69,4 +58,4 @@ afficherOperation("Somme", somme, 20, 40);
 afficherOperation("Multiplication", multiplication, 10, 20);
 
 // Invocation d'une soustraction
-afficherOperation("Soustraction", soustraire, 15, 5);
+afficherOperation("Soustraction", (nb1, nb2) => nb1 - nb2, 15, 5);
