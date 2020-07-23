@@ -42,7 +42,7 @@ function Client(nom, prenom, pseudo, numeroClient) {
  * @param {Personne} personne 
  */
 function afficherPersonne(personne) {
-    return personne.getNomComplet();
+    console.log(personne.getNomComplet());
 }
 
 // Création de personnes
