@@ -40,7 +40,6 @@ var afficherOperation = function (nomOperation, operation, nb1, nb2) {
             operation = additionner;
             break;
         case "Soustraction":
-            operation = soustraire;
             break;
         case "Multiplication":
             operation = multiplication;
@@ -48,7 +47,7 @@ var afficherOperation = function (nomOperation, operation, nb1, nb2) {
         default:
             throw new Error("InvalidArgumentException - Opération invalide!");
     }
-    console.log(arguments[0] + "(" + arguments[2] + "," + arguments[3] + ") = " + arguments[1](arguments[2], arguments[3]));
+    console.log(arguments[0] + "(" + nb1 + "," + nb2 + ") =", arguments[1](nb1, nb2));
 }
 
 // Invocation d'une addition
