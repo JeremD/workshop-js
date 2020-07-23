@@ -57,7 +57,7 @@ var afficherOperation = function (nomOperation, operation, nb1, nb2) {
             operation = multiplication;
             break;
         default:
-            throw new Error("InvalidArgumentExcpetion - Opération invalide!");
+            throw new Error("InvalidArgumentException - Opération invalide!");
     }
     console.log(arguments[0] + "(" + arguments[2] + "," + arguments[3] + ") = " + arguments[1](arguments[2], arguments[3]));
 }
