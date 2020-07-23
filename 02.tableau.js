@@ -5,7 +5,7 @@ var villes = ["nantes", "paris", "saint-nazaire", "angers", "le mans"];
 // Affichage des villes
 villes.forEach(ville => console.log(ville));
 
-// Vérification si les villes contiennent tous la lettre 'a'
+// Vérification si toutes les villes contiennent la lettre 'a'
 var lettreADansToutesLesVilles = villes.every(ville => ville.includes("a"));
 console.log("lettreADansToutesLesVilles =", lettreADansToutesLesVilles);
 
