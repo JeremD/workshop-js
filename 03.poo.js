@@ -64,7 +64,7 @@ console.log(jules.age);
 jules.pseudo = "jules44";
 console.log(jules.pseudo);
 
-// Ajout de la propriété age à Personne
+// Ajout de la propriétée age à Personne
 Personne.prototype.age = "NON RENSEIGNE";
 console.log(jules.age);
 
