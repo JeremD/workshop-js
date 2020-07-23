@@ -1,4 +1,4 @@
-console.log("01 - Fonctions");
+console.log("\n01 - Fonctions");
 
 var nombre1 = 10;
 var nombre2 = 20;
@@ -57,9 +57,9 @@ var afficherOperation = function (nomOperation, operation, nb1, nb2) {
             operation = multiplication;
             break;
         default:
-            throw new InvalidArgumentExcpetion("Opération invalide!");
+            throw new Error("InvalidArgumentExcpetion - Opération invalide!");
     }
-    console.log(arguments[0], "(", arguments[2], ",", arguments[3], ") = ", operation(nb1, nb2));
+    console.log(arguments[0] + "(" + arguments[2] + "," + arguments[3] + ") = " + arguments[1](arguments[2], arguments[3]));
 }
 
 // Invocation d'une addition
